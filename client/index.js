@@ -8,11 +8,14 @@ document.getElementById("exchange-address").addEventListener('input', ({ target:
     return;
   }
 
+// here 'value' comes from the the front-end
   fetch(`${server}/balance/${value}`).then((response) => {
     return response.json();
   }).then(({ balance }) => {
     document.getElementById("balance").innerHTML = balance;
   });
+
+
 });
 
 document.getElementById("transfer-amount").addEventListener('click', () => {
