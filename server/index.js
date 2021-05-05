@@ -3,6 +3,8 @@ const app = express();
 const cors = require('cors');
 const port = 3042;
 
+//TEST COMMIT 2
+
 // localhost can have cross origin errors
 // depending on the browser you use!
 app.use(cors());
